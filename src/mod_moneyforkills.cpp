@@ -129,7 +129,7 @@ public:
 		if (sConfigMgr->GetOption<bool>(MFKEnable, true))
 		{
 			const uint32 PVPMultiplier = sConfigMgr->GetOption<uint32>(MFKPVPKillMult, 0);
-			const uint32 VictimLevel = victim->getLevel();
+			const uint32 VictimLevel = victim->GetLevel();
 
 			// If enabled...
 			if (PVPMultiplier > 0)
@@ -175,7 +175,7 @@ public:
 		if (sConfigMgr->GetOption<bool>(MFKEnable, true))
 		{
 			// Get the creature level
-			const uint32 CreatureLevel = killed->getLevel();
+			const uint32 CreatureLevel = killed->GetLevel();
 			uint32 BossMultiplier = 0;
 			uint32 KillMultiplier = 0;
 			KillType CreatureType;
